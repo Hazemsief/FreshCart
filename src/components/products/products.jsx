@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import styles from './Products.module.css'; 
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import { WishlistContext } from '../../context/wishListContext';
 import toast from 'react-hot-toast';
-import Style from './Products.module.css';
 import { FaHeart } from 'react-icons/fa';
 
 export default function Products() {
@@ -79,7 +79,7 @@ export default function Products() {
   const isProductInWishlist = (productId) => wishlistItems.some(item => item.id === productId);
 
   return (
-    <section className={`py-20 p-40 ${Style.productsSection}`}>
+    <section className="py-20 p-10 bg-white dark:bg-gray-900">
       <div className="container mx-auto">
         <h1 className="font-semibold text-2xl text-green-500 mb-20">Recent Products</h1>
         <input

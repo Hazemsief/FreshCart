@@ -1,7 +1,1 @@
-.heart-icon {
-    @apply text-gray-400; 
-  }
-  
-  .heart-icon.active {
-    @apply text-red-600; 
-  }
+.products{}
