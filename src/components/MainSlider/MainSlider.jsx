@@ -21,7 +21,6 @@ export default function MainSlider() {
   return (
     <div className='flex mt-10'>
 
-      {/* Slider on the right side */}
       <div className='w-2/3 '>
         <Slider {...sliderSettings}>
           <div>
@@ -36,7 +35,6 @@ export default function MainSlider() {
         </Slider>
       </div>
       
-      {/* Fixed Images on the left side */}
       <div className='w-1/3 flex flex-col'>
         <img className='w-full h-[200px] object-cover' src={picture1} alt="picture1" />
         <img className='w-full h-[200px] object-cover' src={picture2} alt="picture2" />
