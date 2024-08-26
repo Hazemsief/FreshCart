@@ -101,7 +101,7 @@ export default function Products() {
             {filteredProducts.map((product) => (
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4 relative" key={product.id}>
                 <Link to={`/ProductDetails/${product.id}/${product.category.name}`} className="block">
-                  <img className="w-full h-48 object-cover rounded-lg" src={product.imageCover} alt={product.title} />
+                  <img className="w-full h-full object-cover rounded-lg" src={product.imageCover} alt={product.title} />
                   <span className="block font-light text-green-600 dark:text-green-400">{product.category.name}</span>
                   <h2 className="text-lg font-normal truncate text-gray-800 mb-4 dark:text-gray-200">{product.title.split('').join(' ')}</h2>
                   <div className="flex items-center justify-between">
